@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ site.title }}</title>
+</head>
+<body>
+    Includes:
+    {% include header.html %}
+    <br/>
+    Current page url : {{ page.url }}
+    <br/>
+    {% include header.html  color="green" %}
+    <br/>
+    Description:<br/>
+    <p>site level variables are stored in _config.yml and we access them using "side.var_name"</p>
+    <p>{{ site.description }}</p>
+    Wrapper<br/>
+    {{ content }}
+    Wrapper<br/>
+    <br/>
+    <b>{{ layout.author }}</b>
+</body>
+</html>
